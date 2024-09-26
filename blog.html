@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Responsivo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="blog.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Meu Blog</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#posts">Posts</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <button id="toggleTheme">Modo Escuro</button>
+    </div>
+
+    <div class="container main-content">
+        <main>
+            <section id="home">
+                <h2>Bem-vindo ao Meu Blog</h2>
+                <p>Este é um blog sobre tecnologia, design e desenvolvimento web.</p>
+            </section>
+
+            <section id="sobre">
+                <h2>Sobre Mim</h2>
+                <p>Sou um desenvolvedor web apaixonado por criar experiências digitais incríveis.</p>
+            </section>
+
+            <section id="posts">
+                <h2>Posts Recentes</h2>
+                <article>
+                    <h3>Título do Post</h3>
+                    <img src="https://via.placeholder.com/800x400" alt="Imagem do post" class="featured-image">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </article>
+                <!-- Adicione mais posts aqui -->
+            </section>
+
+            <section id="contato">
+                <h2>Entre em Contato</h2>
+                <p>Email: exemplo@email.com</p>
+                <p>Twitter: @exemplo</p>
+            </section>
+        </main>
+        <aside>
+            <h3>Posts Populares</h3>
+            <ul>
+                <li><a href="#">Post 1</a></li>
+                <li><a href="#">Post 2</a></li>
+                <li><a href="#">Post 3</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Meu Blog Responsivo</p>
+        </div>
+    </footer>
+
+    <script src="blog.js"></script>
+</body>
+</html>

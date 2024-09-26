@@ -1,0 +1,212 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f0f2f5;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #fff;
+    color: #333;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-weight: 700;
+    color: #4CAF50;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 400;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #4CAF50;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+main {
+    flex: 2;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+aside {
+    flex: 1;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h2, h3 {
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #4CAF50;
+}
+
+p {
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.featured-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 20px;
+    border-radius: 8px 8px 0 0;
+}
+
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+    }
+
+    nav ul {
+        margin-top: 10px;
+    }
+
+    .main-content {
+        flex-direction: column;
+    }
+
+    main {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+/* Estilos para o tema escuro */
+body.dark-theme {
+    background-color: #1a1a1a;
+    color: #f0f2f5;
+}
+
+body.dark-theme header {
+    background-color: #2c2c2c;
+    color: #f0f2f5;
+}
+
+body.dark-theme main,
+body.dark-theme aside {
+    background-color: #2c2c2c;
+    box-shadow: 0 2px 4px rgba(255,255,255,0.1);
+}
+
+body.dark-theme footer {
+    background-color: #1a1a1a;
+}
+
+body.dark-theme nav ul li a {
+    color: #f0f2f5;
+}
+
+body.dark-theme nav ul li a:hover {
+    color: #4CAF50;
+}
+
+body.dark-theme h1,
+body.dark-theme h2,
+body.dark-theme h3 {
+    color: #4CAF50;
+}
+
+/* Estilos para o botão de alternância de tema */
+#toggleTheme {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#toggleTheme:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+body.dark-theme #toggleTheme {
+    background-color: #45a049;
+}
+
+body.dark-theme #toggleTheme:hover {
+    background-color: #4CAF50;
+}
+
+/* ... (mantenha os estilos anteriores) ... */
+
+section {
+    margin-bottom: 40px;
+    padding-top: 60px; /* Espaço para o cabeçalho fixo */
+}
+
+/* Estilo para o cabeçalho fixo */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+/* Ajuste o padding-top do body para compensar o cabeçalho fixo */
+body {
+    padding-top: 60px;
+}
+
+/* ... (mantenha os estilos restantes) ... */
